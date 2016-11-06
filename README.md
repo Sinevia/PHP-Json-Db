@@ -31,4 +31,11 @@ $db->save();
 // Deleting database
 $db->delete();
 
+// Check if database exists
+if($db->exists()){
+    echo 'Database ' . $db->filePath . ' exists';
+} else {
+    echo 'Database ' . $db->filePath . ' DOES NOT exist';
+}
+
 ```
