@@ -39,3 +39,6 @@ if($db->exists()){
 }
 
 ```
+
+## Troubleshooting ##
+Make sure you have read write permissions to the folder where your JSON file is located
