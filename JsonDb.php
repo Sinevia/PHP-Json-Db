@@ -5,8 +5,11 @@ class JsonDb {
     public $filePath = null;
     
 
-    public function __construct($filePath) {
+    public function __construct($filePath, $autoOpen = false) {
         $this->filePath = $filePath;
+        if($autoOpen == true){
+            $this->open();
+        }
     }
     
     /**
